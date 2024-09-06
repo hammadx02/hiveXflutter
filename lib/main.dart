@@ -1,3 +1,5 @@
+// ignore_for_file: unused_local_variable
+
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:hivexflutter/home_page.dart';
@@ -5,6 +7,7 @@ import 'package:hivexflutter/home_page.dart';
 void main() async {
   // init hive
   await Hive.initFlutter();
+
   // data is stored in box
   var box = await Hive.openBox('myBox');
   runApp(const MyApp());
