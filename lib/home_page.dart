@@ -8,6 +8,11 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  void readData() {}
+
+  void writeData() {}
+
+  void deleteData() {}
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,17 +32,17 @@ class _HomePageState extends State<HomePage> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             MaterialButton(
-              onPressed: () {},
+              onPressed: writeData,
               color: Colors.blueAccent,
               child: const Text('Write'),
             ),
             MaterialButton(
-              onPressed: () {},
+              onPressed: readData,
               color: Colors.greenAccent,
               child: const Text('Read'),
             ),
             MaterialButton(
-              onPressed: () {},
+              onPressed: deleteData,
               color: Colors.redAccent,
               child: const Text('Delete'),
             ),
