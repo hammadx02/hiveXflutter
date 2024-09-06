@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:hivexflutter/home_page.dart';
 
-void main() async{
+void main() async {
   await Hive.initFlutter();
+  var box = await Hive.box('myBox');
   runApp(const MyApp());
 }
 
