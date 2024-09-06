@@ -6,7 +6,7 @@ void main() async {
   // init hive
   await Hive.initFlutter();
   // data is stored in box
-  var box = await Hive.box('myBox');
+  var box = await Hive.openBox('myBox');
   runApp(const MyApp());
 }
 

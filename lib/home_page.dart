@@ -15,19 +15,19 @@ class _HomePageState extends State<HomePage> {
   // write data
   void writeData() {
     _myBox.put(1, 'Hammad');
-    print(1);
+    print(_myBox.get(1));
   }
 
   // read data
   void readData() {
     _myBox.get(1);
-    print(1);
+    print(_myBox.get(1));
   }
 
   // delete data
   void deleteData() {
     _myBox.delete(1);
-    print(1);
+    print(_myBox.get(1));
   }
 
   @override
