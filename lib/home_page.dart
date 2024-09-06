@@ -12,15 +12,19 @@ class _HomePageState extends State<HomePage> {
   // reference our box
   var _myBox = Hive.box('myBox');
 
-  // read data
-  void readData() {}
-
   // write data
-  void writeData() {}
+  void writeData() {
+    _myBox.put(1, 'Hammad');
+  }
+
+  // read data
+  void readData() {
+    
+  }
 
   // delete data
   void deleteData() {}
-  
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
