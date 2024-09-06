@@ -19,11 +19,13 @@ class _HomePageState extends State<HomePage> {
 
   // read data
   void readData() {
-    
+    _myBox.get(1);
   }
 
   // delete data
-  void deleteData() {}
+  void deleteData() {
+    _myBox.delete(1);
+  }
 
   @override
   Widget build(BuildContext context) {
