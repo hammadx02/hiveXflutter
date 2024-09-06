@@ -10,7 +10,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   // reference our box
-  var _myBox = Hive.box('myBox');
+  final _myBox = Hive.box('myBox');
 
   // write data
   void writeData() {
