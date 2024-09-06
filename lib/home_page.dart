@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -8,11 +9,18 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  // reference our box
+  var _myBox = Hive.box('myBox');
+
+  // read data
   void readData() {}
 
+  // write data
   void writeData() {}
 
+  // delete data
   void deleteData() {}
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
