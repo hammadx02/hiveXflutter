@@ -21,6 +21,16 @@ class _HomePageState extends State<HomePage> {
             color: Colors.blueAccent,
             child: const Text('Write'),
           ),
+          MaterialButton(
+            onPressed: () {},
+            color: Colors.greenAccent,
+            child: const Text('Read'),
+          ),
+          MaterialButton(
+            onPressed: () {},
+            color: Colors.redAccent,
+            child: const Text('Delete'),
+          ),
         ],
       ),
     );
